@@ -4,7 +4,7 @@ from sqlalchemy import Column, String, Integer, create_engine
 from flask_sqlalchemy import SQLAlchemy
 
 database_name = "bookshelf"
-database_path = "postgresql://{}:{}@{}/{}".format('username', 'password','localhost:5432', database_name)
+database_path = "postgresql://{}:{}@{}/{}".format('postgres', 'Zzz','localhost:5432', database_name)
 
 db = SQLAlchemy()
 
