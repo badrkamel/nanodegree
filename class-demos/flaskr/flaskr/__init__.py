@@ -87,7 +87,8 @@ def create_app(test_config=None):
 			book.update()
 
 			return jsonify({
-					'success':True
+					'id': book.id(),
+					'success': True
 				})
 		except:
 			abort(400)
