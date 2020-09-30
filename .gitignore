@@ -1,3 +1,4 @@
 **/*.pyc
 **/migrations
+**/node_modules
 class-demos/todo/front
