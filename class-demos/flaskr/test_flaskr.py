@@ -4,7 +4,7 @@ import json
 from flask_sqlalchemy import SQLAlchemy
 
 from flaskr import create_app
-from flaskr.models import setup_db, Book
+from models import setup_db, Book
 
 class BookTestCase(unittest.TestCase):
 	"""This class represents the trivia test case"""
