@@ -98,7 +98,8 @@ def create_app(test_config=None):
 
 		return jsonify({
 				"success": True,
-				"deleted": question_id
+				"deleted": question_id,
+				"total_questions": len(Question.query.all())
 			})
 
 	'''
@@ -155,7 +156,7 @@ def create_app(test_config=None):
 
 				return jsonify({
 						"success": True,
-						"question": new_question.format(),
+						"question": new_question.id,
 						"total_questions": len(Question.query.all())
 					})
 		except:
